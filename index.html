@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D christmas Card</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <audio id="card-sound" src="Grinchtheme.mp3"></audio>
+<script>
+    document.querySelector('.card').addEventListener('click', function() {
+        document.getElementById('card-sound').play();
+    });
+</script>
+
+<div class="card">
+    <div class="inside">
+        <p>Merry Grinchmas</p>
+    </div>    
+    <div class="outside">
+        <div class="front">
+            <div class="belt"></div>
+            <div class="mouth"></div>
+            <div class="beard"></div>
+        </div>
+        <div class="back"></div>
+    </div>
+</div>
+</body>
+</html>
